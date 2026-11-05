@@ -56,6 +56,8 @@ cask "propresenter" do
 
   app "ProPresenter.app"
 
+  uninstall quit: "com.renewedvision.propresenter"
+
   zap trash: [
         "/Library/Application Support/RenewedVision",
         "/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
